@@ -128,7 +128,7 @@ Numbers in Ruby will be familiar.
 
 ```ruby
 1 + 1
-#> 2
+#=> 2
 ```
 
 To get non-integer answers, you need to use non-integers
@@ -138,7 +138,7 @@ To get non-integer answers, you need to use non-integers
 #=> 3
 
 10.0 / 3
-#=> 3.3333
+#=> 3.3333...
 ```
 
 You can compare numbers. Heck, you can compare most things. Though you might wonder why you would.
@@ -215,7 +215,7 @@ You can ask if something is nil
 #=> true
 
 @y = 5
-#@y.nil?
+@y.nil?
 #=> false
 
 nil.nil?
@@ -253,16 +253,6 @@ end
 #=> "@x is true"
 ```
 
-Heck, the string doesn't even have to have anything in it
-
-```ruby
-@x = ""
-@x.empty?
-#=> true
-@x.nil?
-#=> false
-```
-
 There are also explicit True and False objects
 
 ```ruby
@@ -296,7 +286,7 @@ end
 
 ### Control Statements
 
-Obviously Ruby supports if statements. Other flow control statements work as well
+Obviously Ruby supports `if` statements. Other flow control statements work as well
 
 ```ruby
 
@@ -325,7 +315,7 @@ end
 
 No, I don't know where the second e went in elsif. Yes, I get it wrong all the time.
 
-Branching conditionals can also use the case statement.
+Branching conditionals can also use the `case` statement.
 
 ```ruby
 option = "Ruby"
@@ -587,7 +577,7 @@ me.knows_language?("Java")
 #=> False
 ```
 
-Classes can be altered any number of times. Even classes you didn't control.
+Classes can be altered any number of times. Even classes you didn't write.
 
 ```ruby
 class Programmer < Person
@@ -633,7 +623,7 @@ end
 #=> [#<Person:>, #<Person:>]
 ```
 
-### Collections & Enumerables
+### Collections & Enumerable
 
 The square brackets in the last example are an array. Ruby several types of collections
 
@@ -734,7 +724,7 @@ end
 #=> I can count to 3
 ```
 
-There are other enumerable things, but these are the ones you use most.
+There are other enumerable things, but these are the ones you use most. You can make your own Enumerable things, but that's probably a topic best saved for a later class.
 
 Enumerable things can be manipulated with a useful set of functions.
 
@@ -840,6 +830,4 @@ Learning Ruby
 - https://www.bloc.io/ruby-warrior#/
 - http://www.rubykoans.com/
 - http://exercism.io/
-
-
-Additional Resources (Koans, Paul's Closure thing?)
+- http://umnhackerhours.github.io/
